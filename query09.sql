@@ -10,5 +10,3 @@ LEFT JOIN Link AS L ON(Post.Id = L.RelatedPostId)
 WHERE L.RelatedPostId IS NULL
 AND Post.CreationDate < '2010-07-01 00:00:00 AM'
 ORDER BY Post.Id DESC;
-
--- operators used: 5

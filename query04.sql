@@ -3,4 +3,9 @@
 -- 1.0 marks: <9 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT Name, COUNT(*) Frequency
+FROM Badge
+WHERE Date > '2019-12-31 23:59:59 PM'
+GROUP BY Name
+ORDER BY COUNT(*) DESC
+LIMIT 20;

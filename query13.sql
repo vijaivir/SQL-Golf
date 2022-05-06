@@ -8,4 +8,17 @@
 -- 0.9 marks: <20 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT B1.Name AS FirstName, B2.Name AS SecondName, B2.Date 
+FROM (
+     SELECT Name, DATE(MAX(Date)) AS Date 
+     FROM Badge
+     GROUP BY Name
+     ORDER BY Name ASC) AS B1
+     JOIN(
+        SELECT Name, DATE(MAX(Date)) AS Date 
+        FROM Badge
+        GROUP BY Name
+        ORDER BY Name ASC 
+    ) AS B2 ON (B1.Date = B2.Date)
+    WHERE B1.Name <> B2.Name AND B1.Name < B2.Name
+    ORDER BY B1.Name, B2.Name ASC;

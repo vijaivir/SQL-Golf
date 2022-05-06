@@ -8,15 +8,16 @@
 -- 0.9 marks: <20 operators
 -- 0.8 marks: correct answer
 
---incomplete
+--TODO: This query is incorrect. It results in an extra row
 
 SELECT DisplayName
 FROM User 
-RIGHT JOIN(
+JOIN(
     SELECT UserId 
     FROM Badge 
     WHERE Name = 'Nice Question'
     GROUP BY UserId
     ) AS X
 ON (User.Id = X.UserId)
+GROUP BY DisplayName
 ORDER BY DisplayName DESC;

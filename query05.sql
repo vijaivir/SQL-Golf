@@ -5,4 +5,10 @@
 -- 1.0 marks: <8 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT Name, COUNT(*) Frequency
+FROM Badge
+GROUP BY Name
+HAVING MIN(Date) > '2013-12-31 23:59:59 PM' 
+    AND MAX(Date) < '2019-12-31 23:59:59 PM' 
+    AND COUNT(*) >= 5
+ORDER BY Name ASC;
