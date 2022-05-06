@@ -1,4 +1,4 @@
-# CSC 370 - SQL Golf
+# SQL Golf
 
 ## Assignment Goals
 
@@ -237,25 +237,9 @@ You are permitted to use sources that you find on the Internet, so long as it is
 
 You should, however, work through the assignment on your own. You are welcome to prepare for the assignment with peers in the class by working through the ungraded worksheets together.
 
-## Illness Policy
-
-The end date for the assignment is three days later than the due date. This is expected to provide sufficient contingency for most minor illnesses and you should submit by the due date rather than the end date if you are not constrained by illness. Submissions will not be accepted even a couple minutes after the end of the illness buffer period (visible as the _end date_ of the assignment in Brightspace).
-
-Support for the assignment _will not be provided_ during the illness buffer. You are encouraged to ask questions early.
-
-In the event that three days contingency is insufficient, you could contact the instructor in advance of the due date with a brief explanation. If you have submitted all previous, graded assignments, then your quiz for this module will be used as the assessment for these learning outcomes. If, on the other hand, you have a missing assignment due to, for example, prior illness this semester, then a well-justified second absence longer than three days we be accommodated with a make-up assessment in the form of an individual, closed, recorded oral exam over Zoom conducted by the instructor. The use of make-up assessments will help to ensure that there are sufficiently many assessment activities (at least 80% of the grade) for each student to accurately reflect their achievement in this course.
-
-You are encouraged to submit your preliminary progress one week and again three days prior to the assignment deadline to document progress in case of illness. These preliminary submissions can, of course, be overwritten by your final submission.
 
 ## Summary
 
 I hope that this assignment is a fun way to learn and/or practice the SQL query language. Good luck!
 
-## Change Log
-
-[05 Mar 12:45] Fixed error in query02 in which sample solution was not sorted correctly.
-[06 Mar 18:40] Fixed error in query02 again: query was not passed to database correctly so constraints were not applied
-[08 Mar 13:40] Fixed error in query10: provided query result was not correct 
-[08 Mar 18:25] Clarify that all commas are counted as operators, even in the SELECT clause
-[08 Mar 18:55] Patch a series of errors after a full QA pass 
-[08 Mar 21:25] Fixed q4 error after review of every date-based predicate to ensure it considered datetime fields
+## Submission Score: 96%
