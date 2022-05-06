@@ -6,13 +6,11 @@
 -- 0.9 marks: <11 operators
 -- 0.8 marks: correct answer
 
---Incomplete
-
 SELECT PostId, DisplayName
 FROM User 
     JOIN Post 
     ON (Post.OwnerUserId = User.Id)
-      JOIN(
+      RIGHT JOIN(
             SELECT PostId, COUNT(*) Count
             FROM Link 
             GROUP BY PostId 

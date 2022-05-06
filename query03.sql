@@ -5,4 +5,9 @@
 -- 1.0 marks: <7 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT Name
+FROM Badge
+WHERE Date > '2017-07-01 00:00:00 AM' 
+GROUP BY Name
+HAVING COUNT(*) > 100
+ORDER BY Name ASC;

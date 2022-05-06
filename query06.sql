@@ -4,4 +4,8 @@
 -- 1.0 marks: <7 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT DisplayName 
+FROM User
+JOIN Post ON (Post.OwnerUserId = User.Id)
+GROUP BY DisplayName
+ORDER BY DisplayName ASC;

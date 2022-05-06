@@ -6,4 +6,9 @@
 -- 1.0 marks: <7 operators
 -- 0.8 marks: correct answer
 
--- Replace this comment line with the actual query
+SELECT Name, MIN(Date) Date
+FROM Badge
+WHERE UserId = 3 
+AND Date > '2011-12-31 23:59:59 PM' 
+GROUP BY Name
+ORDER BY Name ASC;

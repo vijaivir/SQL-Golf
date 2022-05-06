@@ -13,5 +13,3 @@ FROM (SELECT Name, COUNT(*) AS Frequency
                     LIMIT 2) AS X
 ORDER BY Frequency ASC
 LIMIT 1;
-
--- operators used: 9
