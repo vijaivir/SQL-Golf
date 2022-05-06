@@ -242,4 +242,6 @@ You should, however, work through the assignment on your own. You are welcome to
 
 I hope that this assignment is a fun way to learn and/or practice the SQL query language. Good luck!
 
-## Submission Score: 96%
+## Submission Score
+
+96.43%
